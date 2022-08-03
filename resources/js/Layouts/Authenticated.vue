@@ -27,8 +27,14 @@ const showingNavigationDropdown = ref(false);
 
                             <!-- Navigation Links -->
                             <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                                <BreezeNavLink :href="route('dashboard')" :active="route().current('dashboard')">
+                                <BreezeNavLink :href="route('userDashboard')" :active="route().current('userDashboard')">
                                     Dashboard
+                                </BreezeNavLink>
+                            </div>
+
+                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                                <BreezeNavLink :href="route('userTestPage')" :active="route().current('userTestPage')">
+                                    Test Page
                                 </BreezeNavLink>
                             </div>
                         </div>
